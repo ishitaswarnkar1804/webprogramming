@@ -5,7 +5,7 @@ Requirements:
 Structure:
 •	Use <header> for website logo + top navigation.
 •	Use <nav> containing internal links (<a>) to sections such as Politics, Technology, Sports, World, and Editorial.
-•	Use <section> to group the main news categories.
+•	Use <section> to group the main news categories
 •	Use at least three <article> elements, each containing:
 o	Headline (<h2>)
 o	Author name
