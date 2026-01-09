@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Smart Info Portal</title>
+</head>
+<body>
+
+<header>
+    <h1>VIT Chennai – Smart Info Portal</h1>
+    <p>Your Gateway to Campus Information</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a> |
+    <a href="#departments">Departments</a> |
+    <a href="#events">Events</a> |
+    <a href="#contact">Contact</a> |
+    <a href="#login">Login</a>
+</nav>
+
+<section id="search">
+    <h3>Quick Search</h3>
+    <input type="search" placeholder="Search announcements or events...">
+</section>
+
+<main>
+
+<section id="announcements">
+    <h2>Latest Announcements</h2>
+
+    <article>
+        <h3>Mid-Sem Exam Schedule Released</h3>
+        <p>Announcement ID: <data value="A240">A240</data></p>
+        <p>
+            The mid-semester exam schedule for all B.Tech departments
+            has been uploaded. Students should check the timings carefully.
+        </p>
+        <img
+            src="https://images.unsplash.com/photo-1588072432836-e10032774350"
+            width="280"
+            alt="Exam Notice">
+    </article>
+
+    <article>
+        <h3>Wi-Fi Maintenance Downtime</h3>
+        <p>Announcement ID: <data value="A241">A241</data></p>
+        <p>
+            Campus Wi-Fi will undergo maintenance on
+            <time datetime="2025-02-20">February 20</time>
+            from 1 AM to 5 AM.
+        </p>
+    </article>
+</section>
+
+<section id="events">
+    <h2>Upcoming Events</h2>
+
+    <article>
+        <h3>Cultural Night 2025</h3>
+        <p>Date: <time datetime="2025-03-15">March 15, 2025</time></p>
+        <p>An evening of music, dance, and cultural performances.</p>
+    </article>
+
+    <article>
+        <h3>Alumni Interaction Meet</h3>
+        <p>Date: <time datetime="2025-04-02">April 2, 2025</time></p>
+        <p>Career guidance from alumni working in top companies.</p>
+    </article>
+</section>
+
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>How often is the portal updated?</summary>
+        <p>The portal is updated daily with announcements and events.</p>
+    </details>
+
+    <details>
+        <summary>Whom do I contact for technical issues?</summary>
+        <p>You can contact the IT Services Department via email.</p>
+    </details>
+</section>
+
+</main>
+
+<aside>
+    <h3>Campus Quick Links</h3>
+    <ul>
+        <li><a href="https://vit.ac.in/campus/hostels" target="_blank">Hostel Information</a></li>
+        <li><a href="https://vtop.vit.ac.in" target="_blank">Library Portal (VTOP)</a></li>
+        <li><a href="https://vit.ac.in/campuslife/transport" target="_blank">Transport Info</a></li>
+        <li><a href="https://vit.ac.in/campuslife/student-welfare" target="_blank">Student Welfare</a></li>
+    </ul>
+</aside>
+
+<details>
+    <summary>What is the Smart Portal?</summary>
+    <p>
+        The Smart Portal helps students quickly access announcements,
+        events, and department information.
+    </p>
+</details>
+
+<dialog id="infoDialog">
+    <h3>Smart Portal Info</h3>
+    <p>This portal is updated regularly by IT Services.</p>
+    <button onclick="document.getElementById('infoDialog').close()">Close</button>
+</dialog>
+
+<button onclick="document.getElementById('infoDialog').showModal()">
+    Open Portal Info
+</button>
+
+<footer>
+    <p>&copy; 2025 VIT Chennai</p>
+    <p>Handled by IT Services Department</p>
+    <p>
+        Contact:
+        <a href="mailto:support@vitchennai.edu">support@vitchennai.edu</a>
+    </p>
+</footer>
+
+</body>
+</html>
