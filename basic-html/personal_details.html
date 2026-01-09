@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Details Module</title>
+</head>
+<body>
+
+<h1>Student Form</h1>
+
+<form>
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="3"></textarea>
+        <br><br>
+
+        <label for="pass">Password (8 characters minimum):</label>
+        <input type="password" id="pass" name="password"
+               pattern=".{8,}" minlength="8" required>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="10" max="100">
+        <br><br>
+
+        <label for="courses">Choose a Course:</label>
+        <select name="courses" id="courses">
+            <option value="CSE CORE">CSE CORE</option>
+            <option value="DATA SCIENCE">DATA SCIENCE</option>
+            <option value="AI ML">AI ML</option>
+            <option value="ROBOTICS">ROBOTICS</option>
+        </select>
+        <br><br>
+
+        <label for="campus">Choose Your Campus:</label>
+        <input list="campus-list" id="campus" name="campus">
+        <datalist id="campus-list">
+            <option value="Vellore">
+            <option value="Chennai">
+            <option value="AP">
+            <option value="Bhopal">
+        </datalist>
+        <br><br>
+
+        <label for="theme">Choose a Theme Color:</label>
+        <input type="color" id="theme" name="theme" value="#4CAF50">
+        <br><br>
+
+        <label for="profile-picture">Choose a Profile Picture:</label>
+        <input type="file" id="profile-picture" name="profile-picture"
+               accept="image/png, image/jpeg">
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset>
+</form>
+
+</body>
+</html>
