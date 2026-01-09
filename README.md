@@ -1,2 +1,2 @@
 # webprogramming
-webprogramming questions i practiced 
+some webprogramming questions i practiced 
