@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharat Lens Photography</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+header {
+    height: 70vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 60px;
+}
+
+.photo {
+    flex: 1 1 300px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(60%);
+    transition: transform .6s, filter .6s;
+}
+
+.photo:hover img {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>Bharat Lens</h1>
+        <p>Stories of India Through the Camera</p>
+    </div>
+</header>
+
+<div class="gallery">
+    <div class="photo"><img src="https://images.unsplash.com/photo-1548013146-72479768bada"></div>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1519955040855-33dc8b8a2d67"></div>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da"></div>
+    <div class="photo"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"></div>
+</div>
+
+</body>
+</html>
