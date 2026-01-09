@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthy Meals Ordering System</title>
+</head>
+<body>
+
+<h1>Healthy Meals Ordering System</h1>
+<p>
+    This is a simple meal ordering form created for a web development assignment.
+    Users can select meals, view nutrition details, and place an order.
+</p>
+
+<form>
+
+    <fieldset>
+        <legend>Customer Details</legend>
+
+        <p>
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+        </p>
+
+        <p>
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="9876543210" pattern="[0-9]{10}" required>
+        </p>
+
+        <p>
+            <label>Delivery Date:</label>
+            <input type="date" required>
+        </p>
+
+        <p>
+            <label>Spice Level:</label>
+            <input type="range" min="0" max="10">
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Meal Selection</legend>
+
+        <p>
+            <label>Select Meal Type:</label>
+            <select required>
+                <option>Veg</option>
+                <option>Vegan</option>
+                <option>Low-Carb</option>
+                <option>Keto</option>
+                <option>High-Protein</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Optional Add-ons:</label>
+            <input list="addons" placeholder="Choose add-ons">
+            <datalist id="addons">
+                <option value="Fruits">
+                <option value="Salads">
+                <option value="Smoothies">
+            </datalist>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Order Preferences</legend>
+
+        <article>
+            <h3>Nutritional Information</h3>
+            <p>Calories: <meter min="0" max="500" value="350">350</meter></p>
+            <p>Protein: <meter min="0" max="50" value="30">30g</meter></p>
+            <p>Fat: <meter min="0" max="70" value="20">20g</meter></p>
+            <p>Fiber: <meter min="0" max="40" value="15">15g</meter></p>
+        </article>
+    </fieldset>
+
+    <h3>Promotional Video</h3>
+    <video width="360" controls>
+        <source src="https://cdn.pixabay.com/video/2020/08/20/47905-453278693_large.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <figure>
+        <img
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c"
+            width="320"
+            alt="Healthy Food Bowl">
+        <figcaption>Fresh & Nutritious Meal</figcaption>
+    </figure>
+
+    <p>Order preparation status:</p>
+    <progress value="30" max="100">30%</progress>
+
+    <p>
+        <button type="submit">Place Order</button>
+    </p>
+
+</form>
+
+<footer>
+    <p>
+        Follow us:
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">YouTube</a>
+    </p>
+    <p>
+        Support:
+        <a href="mailto:support@healthymeals.com">support@healthymeals.com</a>
+    </p>
+    <p>
+        Timestamp:
+        <time datetime="2025-02-15">15 Feb 2025</time>
+    </p>
+</footer>
+
+</body>
+</html>
